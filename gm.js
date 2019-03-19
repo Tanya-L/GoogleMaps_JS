@@ -19,7 +19,7 @@ function updateAddresses() {
             filtered[f].address + "<br/>" + "Bedrooms: " + filtered[f].bedrooms + " / " +
             "Neighborhood: " + filtered[f].neighborhood);
         let price = $("<div class='price'></div>").text(filtered[f].price);
-        newDiv.prepend(price);
+        newDiv.append(price);
 
         // make description in the right side
         $('#nav-tabContent').append(newDiv);
