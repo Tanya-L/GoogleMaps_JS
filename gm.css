@@ -6,6 +6,10 @@ h6 {
     padding: 10px;
 }
 
+.list-group-item-action {
+    color: #0080ff;
+}
+
 .card{
     display: flex;
     flex-direction: row;

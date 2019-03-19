@@ -2,6 +2,8 @@ $(document).ready(function () {
     $(".city-filter").on("click", function (ev) {
         filterCity = $(this).text();
         updateAddresses();
+        $("div.list-group a").removeClass('active');
+        $(this).addClass('active');
     });
 });
 
@@ -21,6 +23,11 @@ function updateAddresses() {
         let price = $("<div class='price'></div>").text(filtered[f].price);
         newDiv.append(price);
 
+        // google map
+        newDiv.on("click", function (event) {
+            window.open('http://maps.google.com?q=' + filtered[f].address, "_blank");
+        });
+
         // make description in the right side
         $('#nav-tabContent').append(newDiv);
     }
@@ -30,8 +37,9 @@ $.ajax('https://api.myjson.com/bins/2sadq?pretty=1', {
     success: function (data) {
         addresses = data;
         updateAddresses();
+        alert('an error has occurred');
     },
     error: function () {
-        $('#notification-bar').text('An error occurred');
+        alert('an error has occurred');
     }
 });
