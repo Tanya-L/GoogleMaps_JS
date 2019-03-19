@@ -1,0 +1,12 @@
+.table-active {
+    margin: auto;
+}
+
+div.card {
+    border: 1px solid #eeeeee;
+    padding: 12px;
+}
+
+div.price {
+    float: right;
+}

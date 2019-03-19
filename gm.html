@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="gm.css">
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class='table-active'>Google Map</div>
+    <div class='row'>
+        <div class='col-4'>
+            <h6>Cities</h6>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active">
+                    All
+                </a>
+                <a href="#" class="list-group-item list-group-item-action city-filter">The Bronx</a>
+                <a href="#" class="list-group-item list-group-item-action city-filter">Brooklyn</a>
+                <a href="#" class="list-group-item list-group-item-action city-filter">Manhattan</a>
+                <a href="#" class="list-group-item list-group-item-action city-filter">Queens</a>
+                <a href="#" class="list-group-item list-group-item-action city-filter">Staten Island</a>
+
+            </div>
+        </div>
+        <div class='col-8'>
+            <h6>Available Apartment</h6>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                </div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                </div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                </div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="gm.js"></script>
+</body>
+
+</html>
